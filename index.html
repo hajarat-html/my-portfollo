@@ -1,102 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Adeshigbin Oyindamola | Web Developer • Computing Trainer • Digital Creator</title>
-
-    <meta name="description"
-        content="Adeshigbin Oyindamola is a Computer Science graduate with a background in Electrical/Electronic Engineering and experience in web development, computing training, digital creation, data analysis and administrative services.">
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://kit.fontawesome.com/46378fa4b4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 </head>
-
 
 <body>
 
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container nav-container">
 
-    <!-- ================= HEADER ================= -->
+        <a href="#home" class="logo">
+            <img src="images/mylogo.png" alt="Adeshigbin Oyindamola Logo">
+        </a>
 
-    <div id="header">
+        <nav id="nav-menu">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#what-i-do">WHAT I DO</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#training">TRAINING</a>
+            <a href="#work">WORK</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
 
-        <div class="container">
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
 
-            <nav>
-
-                <img src="images/mylogo.png"
-                     alt="Adeshigbin Oyindamola Logo"
-                     class="logo">
-
-
-                <ul id="sidemenu">
-
-                    <li><a href="#header">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#services">WHAT I DO</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
-                    <li><a href="#training">TRAINING</a></li>
-                    <li><a href="#work">WORK</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-
-                    <i class="fa fa-close" onclick="closemenu()"></i>
-
-                </ul>
+    </div>
+</header>
 
 
-                <i class="fa fa-bars" onclick="openmenu()"></i>
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
 
-            </nav>
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <p class="hero-tag">
+                WEB DEVELOPER • COMPUTING TRAINER • DIGITAL CREATOR
+            </p>
+
+            <h1>
+                Hi, I'm Adeshigbin Oyindamola
+                <span>— I build, teach and create with technology.</span>
+            </h1>
+
+            <p>
+                I'm a Computer Science graduate with practical experience in
+                web development, computing and digital skills, data analysis,
+                AI tools, digital content creation and administrative services.
+                I build websites, work with data, create digital designs and
+                AI-assisted videos, and provide practical technology solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">
+                    Work With Me
+                </a>
+
+                <a href="#work" class="btn secondary-btn">
+                    View My Work
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
 
-            <div class="header-text">
+    <div class="container">
+
+        <div class="section-heading">
+            <p>ABOUT ME</p>
+            <h2>Technology, creativity and practical digital skills.</h2>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-text">
 
                 <p>
-                    WEB DEVELOPER • COMPUTING TRAINER • DIGITAL CREATOR
+                    I’m Adeshigbin Oyindamola, a Computer Science graduate with
+                    practical experience across web development, computing,
+                    digital skills, data analysis, AI tools, digital content
+                    creation and administrative services.
                 </p>
 
-
-                <h1>
-
-                    Hi, I'm
-                    <span>Adeshigbin Oyindamola</span>
-
-                    <br>
-
-                    I build, teach and create
-                    <br>
-
-                    <span>with technology.</span>
-
-                </h1>
-
-
-                <p class="hero-description">
-
-                    I am a Computer Science graduate with a background in
-                    Electrical/Electronic Engineering and practical experience
-                    across web development, computing and digital skills
-                    training, data analysis, AI tools, digital content creation
-                    and administrative services.
-
+                <p>
+                    My background combines Computer Science with Electrical &
+                    Electronic Engineering and Industrial Maintenance
+                    Engineering, giving me a practical and multidisciplinary
+                    approach to technology and problem solving.
                 </p>
 
+                <p>
+                    I enjoy building useful digital solutions, learning new
+                    technologies, creating digital content and helping people
+                    work more effectively with technology.
+                </p>
 
-                <div class="hero-buttons">
-
-                    <a href="#contact" class="btn btn2">
-                        Work With Me
-                    </a>
+            </div>
 
 
-                    <a href="#work" class="btn">
-                        View My Work
-                    </a>
+            <!-- ABOUT TABS -->
+            <div class="about-tabs">
+
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="skills">
+                        Skills
+                    </button>
+
+                    <button class="tab-btn" data-tab="experience-tab">
+                        Experience
+                    </button>
+
+                    <button class="tab-btn" data-tab="education">
+                        Education
+                    </button>
+
+                    <button class="tab-btn" data-tab="technical">
+                        Technical Background
+                    </button>
+                </div>
+
+
+                <!-- SKILLS -->
+                <div class="tab-content active" id="skills">
+
+                    <div class="skill-item">
+                        <h3>Web Development</h3>
+                        <p>
+                            WordPress, HTML, CSS, JavaScript, website
+                            development, customization and website management.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Computing & Digital Skills</h3>
+                        <p>
+                            Microsoft Word, Excel, PowerPoint, computer
+                            fundamentals, Canva, AI tools and digital
+                            applications.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Data Analysis & Business Intelligence</h3>
+                        <p>
+                            Excel, Power BI, SQL, Python and Jupyter Lab,
+                            with practical experience in data analysis,
+                            visualization, organization and reporting.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Digital Creation</h3>
+                        <p>
+                            Video editing, AI-assisted video creation,
+                            digital content creation and creative digital
+                            solutions.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Graphic Design</h3>
+                        <p>
+                            Canva, flyers, brochures, presentations and
+                            professional digital materials.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Administrative & Virtual Services</h3>
+                        <p>
+                            Online research, documentation, data entry,
+                            scheduling, travel arrangements, reservations
+                            and digital administrative tasks.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Technical Problem Solving</h3>
+                        <p>
+                            Researching solutions, troubleshooting digital
+                            problems and using technology and AI tools to
+                            solve practical problems.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- EXPERIENCE TAB -->
+                <div class="tab-content" id="experience-tab">
+
+                    <div class="skill-item">
+                        <h3>HisPrint Solution Nigeria Limited</h3>
+                        <p>
+                            Web Developer & Website Manager — March 2025 to Present.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Nigerian Food Fair</h3>
+                        <p>
+                            Web Developer & Digital Professional —
+                            March 2023 to April 2024.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Medixab</h3>
+                        <p>
+                            SEO & Content Specialist —
+                            March 2024 to September 2024.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>TAAS Group of Schools</h3>
+                        <p>
+                            Web & Mobile App Developer —
+                            February 2024 to July 2024.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Dervac Hub</h3>
+                        <p>
+                            Computer/IT Intern —
+                            July 2024 to January 2025.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Roncoley</h3>
+                        <p>
+                            Digital & Administrative Professional —
+                            Contract.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- EDUCATION -->
+                <div class="tab-content" id="education">
+
+                    <div class="skill-item">
+                        <h3>BSc Computer Science</h3>
+                        <p>
+                            Federal University Oye-Ekiti (FUOYE)
+                            <br>
+                            May 2024 – January 2026
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>HND Electrical/Electronic Engineering</h3>
+                        <p>
+                            Yaba College of Technology
+                            <br>
+                            Upper Credit | September 2018 – November 2021
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>ND Industrial Maintenance Engineering</h3>
+                        <p>
+                            Yaba College of Technology
+                            <br>
+                            Upper Credit | July 2013 – November 2016
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>NYSC</h3>
+                        <p>
+                            National Youth Service Corps
+                            <br>
+                            February 2022 – February 2023
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- TECHNICAL BACKGROUND -->
+                <div class="tab-content" id="technical">
+
+                    <div class="skill-item">
+                        <h3>Computer Science</h3>
+                        <p>
+                            Software, web technologies, digital applications,
+                            data analysis and technology-based problem solving.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Electrical/Electronic Engineering</h3>
+                        <p>
+                            Technical foundation in electrical and electronic
+                            systems.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Industrial Maintenance Engineering</h3>
+                        <p>
+                            Technical foundation in maintenance, industrial
+                            systems and practical engineering.
+                        </p>
+                    </div>
+
+                    <div class="skill-item">
+                        <h3>Combined Technical Perspective</h3>
+                        <p>
+                            A multidisciplinary background combining computer
+                            science, engineering, digital technology and
+                            practical problem solving.
+                        </p>
+                    </div>
 
                 </div>
 
@@ -106,469 +344,124 @@
 
     </div>
 
+</section>
 
 
-    <!-- ================= ABOUT ================= -->
+<!-- ================= WHAT I DO ================= -->
+<section id="what-i-do" class="section alternate-section">
 
-    <div id="about">
+    <div class="container">
 
-        <div class="container">
+        <div class="section-heading">
+            <p>WHAT I DO</p>
+            <h2>Practical digital services and technology solutions.</h2>
+        </div>
 
-            <div class="row">
 
+        <div class="services-grid">
 
-                <div class="about-col-1">
+            <!-- WEB DEVELOPMENT -->
+            <div class="service-card">
 
-                    <img src="images/ade.jpg"
-                         alt="Adeshigbin Oyindamola">
-
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
                 </div>
 
+                <h3>Web Development</h3>
 
+                <p>
+                    I build and manage websites using WordPress, HTML, CSS
+                    and JavaScript, including website customization,
+                    maintenance and improvements.
+                </p>
 
-                <div class="about-col-2">
+            </div>
 
-                    <h1 class="sub-titles">
-                        About Me
-                    </h1>
 
+            <!-- COMPUTING -->
+            <div class="service-card">
 
-                    <p>
-
-                        I am a Computer Science graduate with practical
-                        experience in web development, computing and digital
-                        skills training, digital content creation,
-                        administrative services and technical problem solving.
-
-                    </p>
-
-
-                    <p>
-
-                        My technical background also includes a Higher National
-                        Diploma in Electrical/Electronic Engineering and a
-                        National Diploma in Industrial Maintenance Engineering.
-                        This gives me an educational foundation that combines
-                        software, computing and engineering.
-
-                    </p>
-
-
-                    <p>
-
-                        I build websites, work with digital tools, teach
-                        practical computer skills, organize and analyze
-                        information, create digital content and use AI tools
-                        to research and solve practical problems.
-
-                    </p>
-
-
-
-                    <div class="tab-titles">
-
-                        <p class="tab-links active-link"
-                           onclick="opentab('skills', this)">
-
-                            Skills
-
-                        </p>
-
-
-                        <p class="tab-links"
-                           onclick="opentab('experience-tab', this)">
-
-                            Experience
-
-                        </p>
-
-
-                        <p class="tab-links"
-                           onclick="opentab('education', this)">
-
-                            Education
-
-                        </p>
-
-
-                        <p class="tab-links"
-                           onclick="opentab('technical', this)">
-
-                            Technical Background
-
-                        </p>
-
-                    </div>
-
-
-
-                    <!-- ================= SKILLS TAB ================= -->
-
-                    <div class="tab-contents active-tab" id="skills">
-
-                        <ul>
-
-
-                            <li>
-
-                                <span>
-                                    Web Development
-                                </span>
-
-                                <br>
-
-                                WordPress website development and management,
-                                HTML, CSS and basic JavaScript.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Computing & Digital Skills
-                                </span>
-
-                                <br>
-
-                                Microsoft Word, Excel, PowerPoint, computer
-                                fundamentals, Canva, AI tools and digital
-                                applications.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Data & Reporting
-                                </span>
-
-                                <br>
-
-                                Basic data analysis, Excel, data organization
-                                and reporting.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Digital Creation
-                                </span>
-
-                                <br>
-
-                                Canva graphics, presentations, video editing
-                                and AI-assisted content creation.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Administrative & Virtual Services
-                                </span>
-
-                                <br>
-
-                                Online research, documentation, data entry,
-                                scheduling, information organization and
-                                general administrative tasks.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Technical Problem Solving
-                                </span>
-
-                                <br>
-
-                                Researching unfamiliar technical problems,
-                                troubleshooting and identifying practical
-                                digital solutions.
-
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-
-
-                    <!-- ================= EXPERIENCE TAB ================= -->
-
-                    <div class="tab-contents" id="experience-tab">
-
-                        <ul>
-
-
-                            <li>
-
-                                <span>
-                                    HisPrint Solution Nigeria Limited
-                                </span>
-
-                                <br>
-
-                                Web Developer & Website Manager
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Nigerian Food Fair
-                                </span>
-
-                                <br>
-
-                                Web Developer & Digital Support
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Medixab
-                                </span>
-
-                                <br>
-
-                                SEO, Content & Website Support
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    TAAS Group of Schools
-                                </span>
-
-                                <br>
-
-                                Web & Mobile App Developer
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Dervac Hub
-                                </span>
-
-                                <br>
-
-                                Computing & Digital Skills Trainer / Intern
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Roncoley
-                                </span>
-
-                                <br>
-
-                                Digital & Administrative Support
-
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-
-
-                    <!-- ================= EDUCATION TAB ================= -->
-
-                    <div class="tab-contents" id="education">
-
-                        <ul>
-
-
-                            <li>
-
-                                <span>
-                                    Bachelor of Science (BSc) —
-                                    Computer Science
-                                </span>
-
-                                <br>
-
-                                Federal University Oye-Ekiti,
-                                Ekiti State
-
-                                <br>
-
-                                May 2024 – January 2026
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Higher National Diploma (HND) —
-                                    Electrical/Electronic Engineering
-                                </span>
-
-                                <br>
-
-                                Yaba College of Technology, Lagos
-
-                                <br>
-
-                                Upper Credit
-
-                                <br>
-
-                                2018 – 2021
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    National Diploma (ND) —
-                                    Industrial Maintenance Engineering
-                                </span>
-
-                                <br>
-
-                                Yaba College of Technology, Lagos
-
-                                <br>
-
-                                Upper Credit
-
-                                <br>
-
-                                2013 – 2016
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    NYSC
-                                </span>
-
-                                <br>
-
-                                February 2022 – February 2023
-
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-
-
-                    <!-- ================= TECHNICAL BACKGROUND TAB ================= -->
-
-                    <div class="tab-contents" id="technical">
-
-                        <ul>
-
-
-                            <li>
-
-                                <span>
-                                    Electrical/Electronic Engineering
-                                </span>
-
-                                <br>
-
-                                Academic background covering electrical and
-                                electronic principles, systems and
-                                technical problem-solving.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Industrial Maintenance Engineering
-                                </span>
-
-                                <br>
-
-                                Technical education in industrial maintenance
-                                and engineering-related systems.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Computer Science
-                                </span>
-
-                                <br>
-
-                                Computing, software, programming, data and
-                                digital technology.
-
-                            </li>
-
-
-
-                            <li>
-
-                                <span>
-                                    Combined Technical Perspective
-                                </span>
-
-                                <br>
-
-                                My education combines computing with an
-                                engineering background, giving me exposure
-                                to both software and technical systems.
-
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-
+                <div class="service-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
                 </div>
+
+                <h3>Computing & Digital Skills Training</h3>
+
+                <p>
+                    Practical computer and digital skills including Word,
+                    Excel, PowerPoint, computer fundamentals, Canva,
+                    AI tools and digital applications.
+                </p>
+
+            </div>
+
+
+            <!-- DATA -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <h3>Data & Research</h3>
+
+                <p>
+                    Excel, Power BI, SQL, Python (working knowledge), data
+                    analysis, visualization, reporting, online research
+                    and data organization.
+                </p>
+
+            </div>
+
+
+            <!-- AI -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+
+                <h3>AI & Digital Creation</h3>
+
+                <p>
+                    AI-assisted research, problem solving, video creation,
+                    video editing and digital content development.
+                </p>
+
+            </div>
+
+
+            <!-- GRAPHIC DESIGN -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+
+                <h3>Graphic Design & Content</h3>
+
+                <p>
+                    Canva-based designs including flyers, brochures,
+                    presentations, business materials and digital content.
+                </p>
+
+            </div>
+
+
+            <!-- ADMIN -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+
+                <h3>Administrative & Virtual Services</h3>
+
+                <p>
+                    Online research, documentation, data entry, scheduling,
+                    travel arrangements, reservations, website information
+                    updates and general digital administrative tasks.
+                </p>
 
             </div>
 
@@ -576,417 +469,244 @@
 
     </div>
 
+</section>
 
 
-    <!-- ================= WHAT I DO ================= -->
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
 
-    <div id="services">
+    <div class="container">
 
-        <div class="container">
-
-
-            <h1 class="sub-titles">
-                What I Do
-            </h1>
-
-
-            <p class="section-intro">
-
-                I work across technology, digital creation, training,
-                data and professional services.
-
-            </p>
-
-
-
-            <div class="services-list">
-
-
-                <!-- WEB DEVELOPMENT -->
-
-                <div>
-
-                    <i class="fa-solid fa-code"></i>
-
-                    <h2>
-                        Web Development
-                    </h2>
-
-                    <p>
-
-                        I create and manage websites using WordPress,
-                        HTML, CSS and basic JavaScript. I can build websites
-                        from scratch, update existing websites and handle
-                        website-related technical tasks.
-
-                    </p>
-
-                    <a href="#contact">
-                        Work With Me
-                    </a>
-
-                </div>
-
-
-
-                <!-- COMPUTING TRAINING -->
-
-                <div>
-
-                    <i class="fa-solid fa-laptop"></i>
-
-                    <h2>
-                        Computing & Digital Skills Training
-                    </h2>
-
-                    <p>
-
-                        I teach practical computer skills including
-                        Microsoft Word, Excel, PowerPoint, computer
-                        fundamentals, Canva, AI tools and digital
-                        applications.
-
-                    </p>
-
-                    <a href="#contact">
-                        Work With Me
-                    </a>
-
-                </div>
-
-
-
-                <!-- DATA -->
-
-                <div>
-
-                    <i class="fa-solid fa-chart-simple"></i>
-
-                    <h2>
-                        Data & Research
-                    </h2>
-
-                    <p>
-
-                        I work with Excel, basic data analysis,
-                        online research, information gathering,
-                        data organization and simple reporting.
-
-                    </p>
-
-                    <a href="#contact">
-                        Work With Me
-                    </a>
-
-                </div>
-
-
-
-                <!-- AI -->
-
-                <div>
-
-                    <i class="fa-solid fa-robot"></i>
-
-                    <h2>
-                        AI & Digital Creation
-                    </h2>
-
-                    <p>
-
-                        I use AI tools for research, problem solving,
-                        content creation, digital productivity and
-                        AI-assisted video creation.
-
-                    </p>
-
-                    <a href="#contact">
-                        Work With Me
-                    </a>
-
-                </div>
-
-
-
-                <!-- GRAPHIC DESIGN -->
-
-                <div>
-
-                    <i class="fa-solid fa-pen-to-square"></i>
-
-                    <h2>
-                        Graphic Design & Content
-                    </h2>
-
-                    <p>
-
-                        I create Canva graphics, flyers, brochures,
-                        presentations, digital documents and edited
-                        video content.
-
-                    </p>
-
-                    <a href="#contact">
-                        Work With Me
-                    </a>
-
-                </div>
-
-
-
-                <!-- ADMIN -->
-
-                <div>
-
-                    <i class="fa-solid fa-headset"></i>
-
-                    <h2>
-                        Administrative & Virtual Services
-                    </h2>
-
-                    <p>
-
-                        I handle online research, documentation,
-                        data entry, information organization,
-                        scheduling, travel arrangements and
-                        other digital administrative tasks.
-
-                    </p>
-
-                    <a href="#contact">
-                        Work With Me
-                    </a>
-
-                </div>
-
-
-            </div>
-
+        <div class="section-heading">
+            <p>EXPERIENCE</p>
+            <h2>Professional Experience</h2>
         </div>
 
-    </div>
+
+        <div class="experience-list">
 
 
+            <!-- HISPRINT -->
+            <div class="experience-item">
 
-    <!-- ================= EXPERIENCE ================= -->
+                <div class="experience-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
 
-    <div id="experience">
+                <div class="experience-content">
 
-        <div class="container">
-
-
-            <h1 class="sub-titles">
-                Professional Experience
-            </h1>
-
-
-            <p class="section-intro">
-
-                A selection of my professional, contract, internship
-                and project-based experience.
-
-            </p>
-
-
-
-            <div class="experience-list">
-
-
-                <!-- HISPRINT -->
-
-                <div class="experience-item">
-
-                    <span class="job-title">
-                        Web Developer & Website Manager
-                    </span>
-
-                    <span class="company">
+                    <h3>
                         HisPrint Solution Nigeria Limited
-                    </span>
+                    </h3>
 
-                    <span class="date">
+                    <h4>
+                        Web Developer & Website Manager
+                    </h4>
+
+                    <span>
                         March 2025 – Present | Contract
                     </span>
 
                     <p>
-
-                        Developed and currently manage the company's
-                        WordPress website. Handle website updates,
-                        content changes, maintenance and other
-                        website-related technical tasks.
-
+                        Built and currently manage the company website.
+                        Handle WordPress development, website updates,
+                        maintenance, content changes and technical tasks.
+                        Research and implement solutions to improve website
+                        functionality and user experience.
                     </p>
 
                 </div>
 
+            </div>
 
 
-                <!-- NIGERIAN FOOD FAIR -->
+            <!-- NIGERIAN FOOD FAIR -->
+            <div class="experience-item">
 
-                <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
 
-                    <span class="job-title">
-                        Web Developer & Digital Support
-                    </span>
+                <div class="experience-content">
 
-                    <span class="company">
+                    <h3>
                         Nigerian Food Fair
-                    </span>
+                    </h3>
 
-                    <span class="date">
+                    <h4>
+                        Web Developer & Digital Professional
+                    </h4>
+
+                    <span>
                         March 2023 – April 2024 | Contract
                     </span>
 
                     <p>
-
-                        Developed and supported the organization's
-                        website, worked on website content and
-                        provided digital support for online information
-                        and activities.
-
+                        Developed and maintained the website, handled website
+                        updates and provided digital support for online
+                        information and content.
                     </p>
 
                 </div>
 
+            </div>
 
 
-                <!-- MEDIXAB -->
+            <!-- MEDIXAB -->
+            <div class="experience-item">
 
-                <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-search"></i>
+                </div>
 
-                    <span class="job-title">
-                        SEO, Content & Website Support
-                    </span>
+                <div class="experience-content">
 
-                    <span class="company">
+                    <h3>
                         Medixab
-                    </span>
+                    </h3>
 
-                    <span class="date">
+                    <h4>
+                        SEO & Content Specialist
+                    </h4>
+
+                    <span>
                         March 2024 – September 2024 | Contract
                     </span>
 
                     <p>
-
-                        Supported website content and SEO-related
-                        activities, including keyword research,
-                        blog content and website information management.
-
+                        Conducted keyword and online research, developed
+                        website content, worked on SEO optimization and
+                        supported content performance and analytics.
                     </p>
 
                 </div>
 
+            </div>
 
 
-                <!-- TAAS -->
+            <!-- TAAS -->
+            <div class="experience-item">
 
-                <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-school"></i>
+                </div>
 
-                    <span class="job-title">
-                        Web & Mobile App Developer
-                    </span>
+                <div class="experience-content">
 
-                    <span class="company">
+                    <h3>
                         TAAS Group of Schools
-                    </span>
+                    </h3>
 
-                    <span class="date">
-                        February 2024 – July 2024 | Project
+                    <h4>
+                        Web & Mobile App Developer
+                    </h4>
+
+                    <span>
+                        February 2024 – July 2024 | Project/Contract
                     </span>
 
                     <p>
-
-                        Worked on the school website and a mobile
-                        application project while providing technical
-                        support for web and application tasks.
-
+                        Developed the school website and mobile application
+                        and provided technical support for digital systems.
                     </p>
 
                 </div>
 
+            </div>
 
 
-                <!-- DERVAC -->
+            <!-- DERVAC -->
+            <div class="experience-item">
 
-                <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
 
-                    <span class="job-title">
-                        Computing & Digital Skills Trainer / Intern
-                    </span>
+                <div class="experience-content">
 
-                    <span class="company">
+                    <h3>
                         Dervac Hub
-                    </span>
+                    </h3>
 
-                    <span class="date">
+                    <h4>
+                        Computer/IT Intern
+                    </h4>
+
+                    <span>
                         July 2024 – January 2025 | Internship
                     </span>
 
                     <p>
-
-                        Taught Microsoft Word and PowerPoint,
-                        supported users with computer applications
-                        and digital tools, and gained practical
-                        experience with basic data analysis.
-
+                        Worked as an intern and gained practical experience
+                        with Microsoft Word, PowerPoint, computer applications
+                        and digital tools. Developed practical data-analysis
+                        skills and assisted with assigned computer and
+                        digital tasks.
                     </p>
 
                 </div>
 
+            </div>
 
 
-                <!-- RONCOLEY -->
+            <!-- RONCOLEY -->
+            <div class="experience-item">
 
-                <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
 
-                    <span class="job-title">
-                        Digital & Administrative Support
-                    </span>
+                <div class="experience-content">
 
-                    <span class="company">
+                    <h3>
                         Roncoley
-                    </span>
+                    </h3>
 
-                    <span class="date">
+                    <h4>
+                        Digital & Administrative Professional
+                    </h4>
+
+                    <span>
                         Contract
                     </span>
 
                     <p>
-
                         Assisted with flight bookings, dinner reservations,
-                        website information updates and improvements
-                        to existing website content and presentation,
-                        alongside general digital and administrative tasks.
-
+                        website information updates and improvements to the
+                        appearance and functionality of an existing website.
+                        Also handled other assigned digital and administrative
+                        tasks.
                     </p>
 
                 </div>
 
+            </div>
 
 
-                <!-- ACADEMIC -->
+            <!-- ACADEMIC PROJECT SUPPORT -->
+            <div class="experience-item">
 
-                <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
 
-                    <span class="job-title">
+                <div class="experience-content">
+
+                    <h3>
                         Academic Project & Documentation Support
-                    </span>
+                    </h3>
 
-                    <span class="company">
-                        Freelance / Project-Based
-                    </span>
+                    <h4>
+                        Freelance Digital & Academic Services
+                    </h4>
 
                     <p>
-
-                        Assisted students with organizing academic
-                        project reports, document formatting,
-                        presentation preparation and related
-                        computer-based tasks.
-
+                        Assisted students with academic project reports,
+                        document organization, formatting and PowerPoint
+                        presentations.
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -994,942 +714,525 @@
 
     </div>
 
+</section>
 
 
-    <!-- ================= TRAINING ================= -->
+<!-- ================= TRAINING ================= -->
+<section id="training" class="section alternate-section">
 
-    <div id="training">
+    <div class="container">
 
-        <div class="container">
-
-
-            <h1 class="sub-titles">
-                Computing & Digital Skills Training
-            </h1>
-
-
-            <p class="section-intro">
-
-                Practical computer and digital skills for school,
-                work, business and everyday technology use.
-
-            </p>
-
-
-
-            <div class="training-list">
-
-
-                <div class="training-item">
-
-                    <h2>
-                        Computer Fundamentals
-                    </h2>
-
-                    <p>
-
-                        Computer basics, typing, file management,
-                        internet use and essential digital skills.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="training-item">
-
-                    <h2>
-                        Microsoft Word
-                    </h2>
-
-                    <p>
-
-                        Document creation, formatting, reports,
-                        tables and professional documents.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="training-item">
-
-                    <h2>
-                        Microsoft Excel
-                    </h2>
-
-                    <p>
-
-                        Spreadsheets, formulas, data organization,
-                        calculations and basic data analysis.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="training-item">
-
-                    <h2>
-                        Microsoft PowerPoint
-                    </h2>
-
-                    <p>
-
-                        Presentation creation, slide design,
-                        formatting and presentation preparation.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="training-item">
-
-                    <h2>
-                        Canva & Graphic Design
-                    </h2>
-
-                    <p>
-
-                        Flyers, brochures, presentations,
-                        graphics and digital visual content.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="training-item">
-
-                    <h2>
-                        AI Tools
-                    </h2>
-
-                    <p>
-
-                        Practical use of AI tools for research,
-                        productivity, problem solving and content creation.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="training-item">
-
-                    <h2>
-                        Video Creation & Editing
-                    </h2>
-
-                    <p>
-
-                        Video editing and AI-assisted video
-                        creation for digital content.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="training-item">
-
-                    <h2>
-                        Basic Data Analysis
-                    </h2>
-
-                    <p>
-
-                        Working with data using Excel and
-                        introductory analysis tools.
-
-                    </p>
-
-                </div>
-
-
-            </div>
-
+        <div class="section-heading">
+            <p>TRAINING</p>
+            <h2>Training & Professional Development</h2>
         </div>
 
-    </div>
 
+        <div class="training-grid">
 
-
-    <!-- ================= WORK ================= -->
-
-    <div id="work">
-
-        <div class="container">
-
-
-            <h1 class="sub-titles">
-                Work I've Done
-            </h1>
-
-
-            <p class="section-intro">
-
-                A selection of websites, digital projects and
-                professional work I have contributed to.
-
-            </p>
-
-
-
-            <div class="work-list">
-
-
-                <!-- HISPRINT -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-globe"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            HisPrint Solution Nigeria Limited
-                        </h2>
-
-                        <h3>
-                            Website Development & Management
-                        </h3>
-
-                        <p>
-
-                            Developed and currently manage the company's
-                            website, including website updates, content
-                            changes, maintenance and technical tasks.
-
-                        </p>
-
-
-                        <a href="https://hisprints.com.ng/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            View Website
-
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- NIGERIAN FOOD FAIR -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-globe"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            Nigerian Food Fair
-                        </h2>
-
-                        <h3>
-                            Website Development & Digital Support
-                        </h3>
-
-                        <p>
-
-                            Worked on website development, website
-                            content and digital support for the organization.
-
-                        </p>
-
-
-                        <a href="https://nigerianfoodfair.com/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            View Website
-
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- MEDIXAB -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            Medixab
-                        </h2>
-
-                        <h3>
-                            SEO, Content & Website Support
-                        </h3>
-
-                        <p>
-
-                            Worked on website content, SEO activities,
-                            keyword research and blog-related support.
-
-                        </p>
-
-
-                        <a href="https://medixab.com/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            View Website
-
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- TAAS -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-school"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            TAAS Group of Schools
-                        </h2>
-
-                        <h3>
-                            Website & Mobile App Project
-                        </h3>
-
-                        <p>
-
-                            Worked on the school website and a mobile
-                            application project alongside technical
-                            support.
-
-                        </p>
-
-
-                        <a href="https://www.taasgroupofschools.com/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            View Website
-
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- REAL ESTATE -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-chart-line"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            Real Estate Price Evaluation System
-                        </h2>
-
-                        <h3>
-                            Academic Computer Science Project
-                        </h3>
-
-                        <p>
-
-                            A web-based academic project developed
-                            for evaluating real estate prices using
-                            data and a computer application.
-
-                        </p>
-
-
-                        <a href="https://my-school-project-1.streamlit.app/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            View Project
-
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- PORTFOLIO -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-user"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            Personal Portfolio Website
-                        </h2>
-
-                        <h3>
-                            Web Development
-                        </h3>
-
-                        <p>
-
-                            Designed and developed my personal
-                            professional portfolio to present my
-                            skills, experience and digital work.
-
-                        </p>
-
-
-                        <a href="https://myportfollo.netlify.app/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            View Portfolio
-
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- DIGITAL CREATION -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-palette"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            Digital Creative Work
-                        </h2>
-
-                        <h3>
-                            Design, Video & AI-Assisted Creation
-                        </h3>
-
-                        <p>
-
-                            Digital graphics, brochures, presentations,
-                            video editing and AI-assisted digital content
-                            creation.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ENGINEERING -->
-
-                <div class="work-item">
-
-                    <div class="work-icon">
-
-                        <i class="fa-solid fa-microchip"></i>
-
-                    </div>
-
-
-                    <div class="work-content">
-
-                        <h2>
-                            Electrical & Electronics Engineering
-                        </h2>
-
-                        <h3>
-                            Technical Engineering Background
-                        </h3>
-
-                        <p>
-
-                            My HND in Electrical/Electronic Engineering
-                            provides an engineering foundation in
-                            electrical and electronic principles,
-                            technical systems and problem-solving.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
+            <div class="training-card">
+                <i class="fas fa-desktop"></i>
+                <h3>Computer Fundamentals</h3>
             </div>
 
-        </div>
-
-    </div>
-
-
-
-    <!-- ================= TOOLS ================= -->
-
-    <div id="tools">
-
-        <div class="container">
-
-
-            <h1 class="sub-titles">
-                Tools & Technologies
-            </h1>
-
-
-
-            <div class="tools-list">
-
-
-                <div>
-
-                    <i class="fa-brands fa-microsoft"></i>
-
-                    <h3>
-                        Microsoft Office
-                    </h3>
-
-                    <p>
-                        Word • Excel • PowerPoint
-                    </p>
-
-                </div>
-
-
-
-                <div>
-
-                    <i class="fa-brands fa-wordpress"></i>
-
-                    <h3>
-                        WordPress
-                    </h3>
-
-                    <p>
-                        Website Development & Management
-                    </p>
-
-                </div>
-
-
-
-                <div>
-
-                    <i class="fa-brands fa-html5"></i>
-
-                    <h3>
-                        Web Development
-                    </h3>
-
-                    <p>
-                        HTML • CSS • JavaScript
-                    </p>
-
-                </div>
-
-
-
-                <div>
-
-                    <i class="fa-solid fa-palette"></i>
-
-                    <h3>
-                        Creative Tools
-                    </h3>
-
-                    <p>
-                        Canva • Video Editing
-                    </p>
-
-                </div>
-
-
-
-                <div>
-
-                    <i class="fa-solid fa-chart-line"></i>
-
-                    <h3>
-                        Data
-                    </h3>
-
-                    <p>
-                        Excel • Basic Data Analysis
-                    </p>
-
-                </div>
-
-
-
-                <div>
-
-                    <i class="fa-solid fa-robot"></i>
-
-                    <h3>
-                        AI Tools
-                    </h3>
-
-                    <p>
-                        AI-Assisted Research & Problem Solving
-                    </p>
-
-                </div>
-
-
-
-                <div>
-
-                    <i class="fa-solid fa-microchip"></i>
-
-                    <h3>
-                        Technical Background
-                    </h3>
-
-                    <p>
-                        Electrical/Electronic Engineering
-                    </p>
-
-                </div>
-
-
+            <div class="training-card">
+                <i class="fas fa-file-word"></i>
+                <h3>Microsoft Word</h3>
             </div>
 
-        </div>
-
-    </div>
-
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <div id="contact">
-
-        <div class="container">
-
-
-            <div class="row">
-
-
-                <div class="contact-left">
-
-
-                    <h1 class="sub-titles">
-                        Let's Work Together
-                    </h1>
-
-
-                    <p>
-
-                        <i class="fa-solid fa-paper-plane"></i>
-
-                        ajaratadeshigbin@gmail.com
-
-                    </p>
-
-
-                    <p>
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        07077563314, 08122614587
-
-                    </p>
-
-
-                    <p>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Lagos, Nigeria
-
-                    </p>
-
-
-
-                    <div class="social-icon">
-
-
-                        <a href="https://www.facebook.com/adeshigbin.oyindamola/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <i class="fa-brands fa-facebook"></i>
-
-                        </a>
-
-
-
-                        <a href="https://www.linkedin.com/in/ajarat-adeshigbi-b18927219/"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <i class="fa-brands fa-linkedin"></i>
-
-                        </a>
-
-
-
-                        <a href="https://github.com/hajarat-html"
-                           target="_blank"
-                           rel="noopener noreferrer">
-
-                            <i class="fa-brands fa-github"></i>
-
-                        </a>
-
-
-                    </div>
-
-
-
-                    <a href="images/AJARAT ADESHIGBIN OYINDAMOLA.pdf"
-                       download
-                       class="btn btn2">
-
-                        Download My CV
-
-                    </a>
-
-
-                </div>
-
-
-
-                <div class="contact-right">
-
-
-                    <h2>
-                        Have a project or job opportunity?
-                    </h2>
-
-
-                    <p>
-
-                        Send me a message and tell me what you
-                        need help with.
-
-                    </p>
-
-
-
-                    <form action="https://formspree.io/f/xeqwyzbr"
-                          method="POST">
-
-
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Your Name"
-                            required
-                        >
-
-
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Your Email"
-                            required
-                        >
-
-
-                        <textarea
-                            name="message"
-                            rows="6"
-                            placeholder="Tell me about the job or project..."
-                            required
-                        ></textarea>
-
-
-                        <button
-                            type="submit"
-                            class="btn btn2">
-
-                            Send Message
-
-                        </button>
-
-
-                    </form>
-
-
-                </div>
-
-
+            <div class="training-card">
+                <i class="fas fa-file-excel"></i>
+                <h3>Microsoft Excel</h3>
             </div>
 
+            <div class="training-card">
+                <i class="fas fa-file-powerpoint"></i>
+                <h3>Microsoft PowerPoint</h3>
+            </div>
 
+            <div class="training-card">
+                <i class="fas fa-palette"></i>
+                <h3>Canva & Graphic Design</h3>
+            </div>
 
-            <div class="copyright">
+            <div class="training-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI Tools</h3>
+            </div>
+
+            <div class="training-card">
+                <i class="fas fa-video"></i>
+                <h3>Video Creation & Editing</h3>
+            </div>
+
+            <div class="training-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Data Analysis</h3>
 
                 <p>
+                    Six-month data analysis training with Midramo Consulting
+                    Ltd under the USADF/LSETF Project 2, covering Excel,
+                    Power BI, SQL and Python for data analysis, visualization
+                    and reporting.
+                </p>
+            </div>
 
-                    &copy; 2026 Adeshigbin Oyindamola.
-                    All Rights Reserved.
+        </div>
 
+    </div>
+
+</section>
+
+
+<!-- ================= WORK ================= -->
+<section id="work" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>MY WORK</p>
+            <h2>Selected Projects & Digital Work</h2>
+        </div>
+
+
+        <div class="work-grid">
+
+
+            <!-- HISPRINT -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+
+                <h3>HisPrint</h3>
+
+                <p>
+                    Website development and ongoing website management.
+                </p>
+
+                <a href="https://hisprints.com.ng/" target="_blank">
+                    View Website
+                </a>
+
+            </div>
+
+
+            <!-- NIGERIAN FOOD FAIR -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+
+                <h3>Nigerian Food Fair</h3>
+
+                <p>
+                    Website development and digital website work.
+                </p>
+
+                <a href="https://nigerianfoodfair.com/" target="_blank">
+                    View Website
+                </a>
+
+            </div>
+
+
+            <!-- MEDIXAB -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <h3>Medixab</h3>
+
+                <p>
+                    SEO, content writing, keyword research and digital
+                    content work.
+                </p>
+
+                <a href="https://medixab.com/" target="_blank">
+                    View Website
+                </a>
+
+            </div>
+
+
+            <!-- TAAS -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+
+                <h3>TAAS Group of Schools</h3>
+
+                <p>
+                    Website and mobile application development project.
+                </p>
+
+                <a href="https://www.taasgroupofschools.com/" target="_blank">
+                    View Website
+                </a>
+
+            </div>
+
+
+            <!-- REAL ESTATE -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <h3>Real Estate Price Evaluation System</h3>
+
+                <p>
+                    Academic data project developed as part of my Computer
+                    Science studies.
+                </p>
+
+                <a href="https://my-school-project-1.streamlit.app/"
+                   target="_blank">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <!-- PORTFOLIO -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    My professional portfolio website showcasing my
+                    technology, digital and creative work.
+                </p>
+
+                <a href="https://myportfollo.netlify.app/"
+                   target="_blank">
+                    View Portfolio
+                </a>
+
+            </div>
+
+
+            <!-- DIGITAL CREATIVE -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+
+                <h3>Digital Creative Work</h3>
+
+                <p>
+                    Graphic designs, Canva projects, presentations,
+                    digital content and AI-assisted video creations.
                 </p>
 
             </div>
 
 
+            <!-- ENGINEERING -->
+            <div class="work-card">
+
+                <div class="work-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+
+                <h3>Electrical & Electronics Engineering</h3>
+
+                <p>
+                    Technical background in Electrical/Electronic Engineering
+                    and Industrial Maintenance Engineering.
+                </p>
+
+            </div>
+
         </div>
 
     </div>
 
+</section>
 
 
-    <!-- ================= JAVASCRIPT ================= -->
+<!-- ================= TOOLS ================= -->
+<section class="section alternate-section">
 
-    <script>
+    <div class="container">
 
-        /* ================= ABOUT TABS ================= */
-
-        var tablinks = document.getElementsByClassName("tab-links");
-
-        var tabcontents =
-            document.getElementsByClassName("tab-contents");
-
-
-        function opentab(tabname, clickedTab) {
-
-            for (let tablink of tablinks) {
-
-                tablink.classList.remove("active-link");
-
-            }
+        <div class="section-heading">
+            <p>TOOLS & TECHNOLOGIES</p>
+            <h2>Tools I Work With</h2>
+        </div>
 
 
-            for (let tabcontent of tabcontents) {
+        <div class="tools-grid">
 
-                tabcontent.classList.remove("active-tab");
+            <div class="tool-item">
+                <i class="fas fa-file-alt"></i>
+                <h3>Microsoft Office</h3>
+                <p>Word • Excel • PowerPoint</p>
+            </div>
 
-            }
+            <div class="tool-item">
+                <i class="fab fa-wordpress"></i>
+                <h3>WordPress</h3>
+                <p>Website Development & Management</p>
+            </div>
+
+            <div class="tool-item">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML • CSS • JavaScript</p>
+            </div>
+
+            <div class="tool-item">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Creative Tools</h3>
+                <p>Canva • Video Editing</p>
+            </div>
+
+            <div class="tool-item">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Data Analysis</h3>
+                <p>Excel • Power BI • SQL • Python</p>
+            </div>
+
+            <div class="tool-item">
+                <i class="fas fa-robot"></i>
+                <h3>AI Tools</h3>
+                <p>AI-Assisted Research & Creation</p>
+            </div>
+
+            <div class="tool-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Technical Background</h3>
+                <p>
+                    Computer Science • Electrical/Electronic Engineering
+                    • Industrial Maintenance
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-            clickedTab.classList.add("active-link");
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p>CONTACT</p>
+            <h2>Let's Work Together</h2>
+        </div>
 
 
-            document
-                .getElementById(tabname)
-                .classList.add("active-tab");
+        <div class="contact-content">
 
-        }
+            <div class="contact-info">
 
+                <div class="contact-item">
 
+                    <i class="fas fa-envelope"></i>
 
-        /* ================= MOBILE MENU ================= */
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:ajaratadeshigbin@gmail.com">
+                            ajaratadeshigbin@gmail.com
+                        </a>
+                    </div>
 
-        var sidemenu =
-            document.getElementById("sidemenu");
-
-
-        function openmenu() {
-
-            sidemenu.style.right = "0";
-
-        }
+                </div>
 
 
-        function closemenu() {
+                <div class="contact-item">
 
-            sidemenu.style.right = "-200px";
+                    <i class="fas fa-phone"></i>
 
-        }
+                    <div>
+                        <h3>Phone</h3>
+                        <p>
+                            0707756334
+                            <br>
+                            08122614587
+                        </p>
+                    </div>
+
+                </div>
 
 
+                <div class="contact-item">
 
-        /* ================= CLOSE MENU AFTER LINK CLICK ================= */
+                    <i class="fas fa-map-marker-alt"></i>
 
-        var menuLinks =
-            sidemenu.querySelectorAll("a");
+                    <div>
+                        <h3>Location</h3>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+
+                </div>
 
 
-        menuLinks.forEach(function(link) {
+                <div class="contact-item">
 
-            link.addEventListener("click", function() {
+                    <i class="fas fa-file-download"></i>
 
-                sidemenu.style.right = "-200px";
+                    <div>
+                        <h3>My CV</h3>
 
+                        <a href="images/AJARAT ADESHIGBIN OYINDAMOLA.pdf"
+                           download>
+                            Download CV
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="https://github.com/hajarat-html"
+                       target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+            <form
+                action="https://formspree.io/f/xeqwyzbr"
+                method="POST"
+                class="contact-form"
+            >
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                >
+
+                <textarea
+                    name="message"
+                    rows="7"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Adeshigbin Oyindamola. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+
+    // Mobile menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll("#nav-menu a").forEach(link => {
+
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+        });
+
+    });
+
+
+    // About tabs
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const target = button.getAttribute("data-tab");
+
+            tabButtons.forEach(btn => {
+                btn.classList.remove("active");
             });
+
+            tabContents.forEach(content => {
+                content.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            document.getElementById(target).classList.add("active");
 
         });
 
-    </script>
+    });
 
+</script>
 
 </body>
-
 </html>
