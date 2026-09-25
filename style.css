@@ -75,9 +75,6 @@ a {
     position: relative;
 }
 
-
-/* subtle dark overlay */
-
 #header::after {
     content: '';
     position: absolute;
@@ -164,7 +161,11 @@ nav ul li a:hover {
     color: #fff;
 }
 
-nav .fa {
+
+/* Hide menu icons on desktop */
+
+nav > .fas,
+nav ul > .fas {
     display: none;
 }
 
@@ -445,6 +446,9 @@ nav .fa {
 
 }
 
+
+/* Existing list-based content */
+
 .tab-contents ul li {
     list-style: none;
 
@@ -463,6 +467,31 @@ nav .fa {
     font-size: 15px;
 
     font-weight: 600;
+}
+
+
+/* Your current HTML also uses DIV blocks */
+
+.tab-contents > div {
+    margin-bottom: 22px;
+
+    color: #b8bcc7;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.tab-contents > div span {
+    display: block;
+
+    color: var(--primary-light);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
 }
 
 
@@ -1123,13 +1152,26 @@ form .btn2 {
 
     /* ================= MOBILE NAV ================= */
 
-    nav .fa {
+    nav {
+        width: 100%;
+    }
+
+    /* Hamburger icon */
+
+    nav > .fas {
         display: block;
 
         font-size: 25px;
 
         cursor: pointer;
+
+        color: #fff;
+
+        padding: 5px;
     }
+
+
+    /* Side navigation panel */
 
     nav ul {
         background: #111522;
@@ -1156,26 +1198,57 @@ form .btn2 {
 
         box-shadow:
             -15px 0 40px rgba(0, 0, 0, 0.35);
+
+        overflow-y: auto;
     }
 
     nav ul li {
         display: block;
 
-        margin: 25px 30px;
+        margin: 0;
     }
 
     nav ul li a {
+        display: block;
+
         font-size: 15px;
+
+        padding: 15px 30px;
+
+        color: #fff;
     }
 
-    nav ul .fa {
+    nav ul li a::after {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 0, 79, 0.08);
+
+        color: var(--primary-light);
+    }
+
+
+    /* Close icon */
+
+    nav ul > .fas {
+        display: block;
+
         position: absolute;
 
-        top: 25px;
+        top: 22px;
 
         left: 25px;
 
+        font-size: 24px;
+
+        color: #fff;
+
         cursor: pointer;
+    }
+
+    nav ul > .fas:hover {
+        color: var(--primary);
     }
 
 
@@ -1285,26 +1358,136 @@ form .btn2 {
     }
 
 
-    /* ================= TABS ================= */
+    /* ================= ABOUT TABS ================= */
+
+    /*
+       Mobile layout:
+
+       Skills              Experience
+       Education           Technical Background
+    */
 
     .tab-titles {
-        margin-top: 30px;
+        display: grid;
 
-        gap: 10px 25px;
+        grid-template-columns: 1fr 1fr;
+
+        width: 100%;
+
+        margin: 30px 0 0;
+
+        gap: 0;
+
+        border: 1px solid var(--border);
+
+        border-radius: 8px;
+
+        overflow: hidden;
+
+        background: rgba(255,255,255,0.015);
     }
 
     .tab-links {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 14px 8px;
+
+        font-size: 13px;
+
+        line-height: 1.4;
+
+        text-align: center;
+
+        color: #8e93a3;
+
+        border-bottom: 1px solid var(--border);
+
+        box-sizing: border-box;
+    }
+
+    /* Vertical divider */
+
+    .tab-links:nth-child(odd) {
+        border-right: 1px solid var(--border);
+    }
+
+    /* Remove bottom border from bottom row */
+
+    .tab-links:nth-child(3),
+    .tab-links:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .tab-links.active-link {
+        color: #fff;
+
+        background: rgba(255, 0, 79, 0.06);
+    }
+
+    .tab-links.active-link::after {
+        width: 35px;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+
+    /* Tab content appears below the tab box */
+
+    .tab-contents {
+        width: 100%;
+
+        margin-top: 25px;
+    }
+
+    .tab-contents > div {
+        margin-bottom: 22px;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        color: #b8bcc7;
+    }
+
+    .tab-contents > div span {
+        display: block;
+
+        color: var(--primary-light);
+
         font-size: 14px;
+
+        font-weight: 600;
+
+        margin-bottom: 6px;
+    }
+
+
+    /* List-based tab content */
+
+    .tab-contents ul {
+        width: 100%;
     }
 
     .tab-contents ul li {
         font-size: 13px;
 
-        line-height: 1.7;
+        line-height: 1.8;
+
+        margin: 20px 0;
     }
 
     .tab-contents ul li span {
+        display: block;
+
         font-size: 14px;
+
+        line-height: 1.5;
+
+        margin-bottom: 6px;
     }
 
 
@@ -1330,6 +1513,12 @@ form .btn2 {
 
     .services-list > div h2 {
         font-size: 21px;
+    }
+
+    .services-list > div p {
+        font-size: 14px;
+
+        line-height: 1.8;
     }
 
 
