@@ -17,6 +17,7 @@ body {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 :root {
@@ -59,9 +60,11 @@ img {
 #header {
     width: 100%;
     min-height: 100vh;
+
     background-image: url("images/ara.jpg");
     background-size: cover;
     background-position: center;
+
     position: relative;
 }
 
@@ -69,6 +72,7 @@ img {
     content: "";
     position: absolute;
     inset: 0;
+
     background: rgba(8, 11, 22, 0.58);
 }
 
@@ -85,9 +89,11 @@ img {
 nav {
     height: 80px;
     width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     position: relative;
     z-index: 1000;
 }
@@ -102,6 +108,7 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 30px;
+
     list-style: none;
 }
 
@@ -111,20 +118,27 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
+
     font-size: 15px;
     font-weight: 500;
+
     position: relative;
+
     transition: 0.3s ease;
 }
 
 nav ul li a::after {
     content: "";
+
     position: absolute;
     left: 0;
     bottom: -7px;
+
     width: 0;
     height: 2px;
+
     background: var(--primary);
+
     transition: 0.3s ease;
 }
 
@@ -137,7 +151,7 @@ nav ul li a:hover::after {
 }
 
 
-/* Hide menu icons on desktop */
+/* Hide mobile icons on desktop */
 
 nav > .fa-bars,
 nav ul > .fa-times {
@@ -151,23 +165,31 @@ nav ul > .fa-times {
 
 .header-text {
     padding-top: 160px;
+
     max-width: 800px;
+
     position: relative;
     z-index: 2;
 }
 
 .header-text > p:first-child {
     color: var(--primary-light);
+
     font-size: 17px;
     font-weight: 700;
+
     letter-spacing: 1px;
+
     margin-bottom: 18px;
 }
 
 .header-text h1 {
     font-size: 58px;
+
     line-height: 1.15;
+
     margin-bottom: 25px;
+
     font-weight: 700;
 }
 
@@ -177,8 +199,11 @@ nav ul > .fa-times {
 
 .hero-description {
     max-width: 750px;
+
     color: #d0d3dc;
+
     font-size: 16px;
+
     line-height: 1.8;
 }
 
@@ -189,15 +214,24 @@ nav ul > .fa-times {
 
 .btn {
     display: inline-block;
+
     margin-top: 25px;
+
     padding: 12px 28px;
+
     border: 1px solid var(--primary);
+
     border-radius: 6px;
+
     background: var(--primary);
+
     color: #fff;
+
     font-size: 14px;
     font-weight: 600;
+
     transition: 0.3s ease;
+
     cursor: pointer;
 }
 
@@ -239,22 +273,29 @@ nav ul > .fa-times {
 }
 
 
-/* IMPORTANT:
-   Your HTML uses .sub-titles (plural)
-*/
+/* =========================================================
+   SECTION TITLES
+========================================================= */
 
 .sub-titles {
     font-size: 45px;
+
     line-height: 1.2;
+
     font-weight: 700;
+
     margin-bottom: 20px;
 }
 
 .section-intro {
     max-width: 850px;
+
     margin-bottom: 25px;
+
     color: var(--text-light);
+
     font-size: 15px;
+
     line-height: 1.8;
 }
 
@@ -265,7 +306,9 @@ nav ul > .fa-times {
 
 .row {
     display: flex;
+
     justify-content: space-between;
+
     gap: 55px;
 }
 
@@ -275,7 +318,9 @@ nav ul > .fa-times {
 
 .about-col-1 img {
     width: 100%;
+
     display: block;
+
     border-radius: 15px;
 }
 
@@ -294,26 +339,43 @@ nav ul > .fa-times {
 
 .tab-titles {
     width: 100%;
+
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     margin: 38px 0 28px;
+
     border: 1px solid var(--border);
+
     border-radius: 10px;
+
     overflow: hidden;
+
     background: rgba(255, 255, 255, 0.02);
 }
 
 .tab-links {
     margin: 0;
+
     padding: 15px 8px;
+
     text-align: center;
+
     color: var(--text-muted);
+
     font-size: 14px;
+
     font-weight: 600;
+
     cursor: pointer;
+
     position: relative;
+
     transition: 0.3s ease;
+
     border-right: 1px solid var(--border);
+
     user-select: none;
 }
 
@@ -327,16 +389,21 @@ nav ul > .fa-times {
 
 .tab-links.active-link {
     color: #fff;
+
     background: rgba(255, 0, 79, 0.08);
 }
 
 .tab-links.active-link::after {
     content: "";
+
     position: absolute;
+
     left: 0;
     bottom: 0;
+
     width: 100%;
     height: 3px;
+
     background: var(--primary);
 }
 
@@ -347,6 +414,7 @@ nav ul > .fa-times {
 
 .tab-contents {
     display: none;
+
     width: 100%;
 }
 
@@ -356,15 +424,21 @@ nav ul > .fa-times {
 
 .tab-contents > div {
     width: 100%;
+
     padding: 17px 18px;
+
     margin-bottom: 13px;
 
     background: var(--card);
+
     border: 1px solid var(--border);
+
     border-radius: 9px;
 
     color: var(--text-light);
+
     font-size: 14px;
+
     line-height: 1.75;
 }
 
@@ -374,9 +448,13 @@ nav ul > .fa-times {
 
 .tab-contents > div span {
     display: block;
+
     color: var(--primary-light);
+
     font-size: 14px;
+
     font-weight: 700;
+
     margin-bottom: 5px;
 }
 
@@ -387,38 +465,51 @@ nav ul > .fa-times {
 
 .services-list {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 22px;
+
     margin-top: 35px;
 }
 
 .services-list > div {
     background: var(--card);
+
     border: 1px solid var(--border);
+
     border-radius: 12px;
+
     padding: 28px;
+
     transition: 0.3s ease;
 }
 
 .services-list > div:hover {
     transform: translateY(-5px);
+
     border-color: rgba(255, 0, 79, 0.4);
 }
 
 .services-list i {
     color: var(--primary);
+
     font-size: 32px;
+
     margin-bottom: 18px;
 }
 
 .services-list h2 {
     font-size: 20px;
+
     line-height: 1.35;
+
     margin-bottom: 12px;
 }
 
 .services-list p {
     font-size: 14px;
+
     line-height: 1.8;
 }
 
@@ -433,9 +524,13 @@ nav ul > .fa-times {
 
 .experience-item {
     background: var(--card);
+
     border: 1px solid var(--border);
+
     border-radius: 10px;
+
     padding: 25px;
+
     margin-bottom: 18px;
 }
 
@@ -445,24 +540,31 @@ nav ul > .fa-times {
 
 .job-title {
     font-size: 21px;
+
     line-height: 1.35;
+
     margin-bottom: 5px;
 }
 
 .company {
     color: var(--primary-light);
+
     font-size: 16px;
+
     margin-bottom: 4px;
 }
 
 .experience-item .date {
     color: var(--text-muted);
+
     font-size: 13px;
+
     margin-bottom: 12px;
 }
 
 .experience-item > p:last-child {
     font-size: 14px;
+
     line-height: 1.8;
 }
 
@@ -473,27 +575,37 @@ nav ul > .fa-times {
 
 .training-list {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 22px;
+
     margin-top: 35px;
 }
 
 .training-item {
     background: var(--card);
+
     border: 1px solid var(--border);
+
     border-radius: 10px;
+
     padding: 25px;
 }
 
 .training-item h2 {
     font-size: 20px;
+
     line-height: 1.35;
+
     margin-bottom: 12px;
 }
 
 .training-item p {
     font-size: 14px;
+
     line-height: 1.8;
+
     margin-bottom: 10px;
 }
 
@@ -508,47 +620,55 @@ nav ul > .fa-times {
 
 .work-list {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 22px;
+
     margin-top: 35px;
 }
 
-
-/*
-   IMPORTANT:
-   Your HTML uses .work-item,
-   not .work-card.
-*/
-
 .work-item {
     background: var(--card);
+
     border: 1px solid var(--border);
+
     border-radius: 10px;
+
     padding: 25px;
+
     display: flex;
+
     gap: 20px;
+
     transition: 0.3s ease;
 }
 
 .work-item:hover {
     transform: translateY(-4px);
+
     border-color: rgba(255, 0, 79, 0.4);
 }
 
 .work-icon {
     min-width: 50px;
+
     height: 50px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 10px;
+
     background: rgba(255, 0, 79, 0.1);
 }
 
 .work-icon i {
     color: var(--primary);
+
     font-size: 22px;
 }
 
@@ -558,22 +678,31 @@ nav ul > .fa-times {
 
 .work-content h2 {
     font-size: 19px;
+
     line-height: 1.35;
+
     margin-bottom: 10px;
 }
 
 .work-content p {
     font-size: 14px;
+
     line-height: 1.75;
+
     margin-bottom: 12px;
 }
 
 .work-content a {
     display: inline-flex;
+
     align-items: center;
+
     gap: 7px;
+
     color: var(--primary-light);
+
     font-size: 13px;
+
     font-weight: 600;
 }
 
@@ -592,34 +721,47 @@ nav ul > .fa-times {
 
 .tools-list {
     display: grid;
+
     grid-template-columns: repeat(5, 1fr);
+
     gap: 15px;
+
     margin-top: 35px;
 }
 
 .tools-list > div {
     background: var(--card);
+
     border: 1px solid var(--border);
+
     border-radius: 9px;
+
     padding: 20px 10px;
+
     text-align: center;
+
     transition: 0.3s ease;
 }
 
 .tools-list > div:hover {
     transform: translateY(-4px);
+
     border-color: rgba(255, 0, 79, 0.35);
 }
 
 .tools-list > div > i {
     display: block;
+
     color: var(--primary);
+
     font-size: 28px;
+
     margin-bottom: 10px;
 }
 
 .tools-list > div > p {
     color: var(--text-light);
+
     font-size: 13px;
 }
 
@@ -638,25 +780,33 @@ nav ul > .fa-times {
 
 .contact-left p {
     margin: 18px 0;
+
     display: flex;
+
     align-items: center;
+
     gap: 12px;
 }
 
 .contact-left p i {
     color: var(--primary);
+
     width: 20px;
 }
 
 .social-icon {
     margin-top: 25px;
+
     display: flex;
+
     gap: 18px;
 }
 
 .social-icon a {
     color: var(--text-light);
+
     font-size: 25px;
+
     transition: 0.3s ease;
 }
 
@@ -675,23 +825,29 @@ nav ul > .fa-times {
 .contact-right input,
 .contact-right textarea {
     width: 100%;
+
     display: block;
 
     border: 1px solid var(--border);
+
     outline: none;
 
     background: var(--card);
+
     color: #fff;
 
     padding: 15px;
+
     margin-bottom: 15px;
 
     border-radius: 7px;
+
     font-size: 14px;
 }
 
 .contact-right textarea {
     min-height: 150px;
+
     resize: vertical;
 }
 
@@ -711,28 +867,38 @@ nav ul > .fa-times {
 
 .copyright {
     text-align: center;
+
     padding: 25px 15px;
+
     background: #060811;
 }
 
 .copyright p {
     color: var(--text-muted);
+
     font-size: 13px;
 }
 
 
 /* =========================================================
-   MOBILE NAVIGATION + MOBILE LAYOUT
+   MOBILE DESIGN
 ========================================================= */
 
 @media only screen and (max-width: 768px) {
 
-    /* -----------------------------------------
-       GENERAL
-    ----------------------------------------- */
+
+    /* =====================================================
+       GENERAL MOBILE
+    ===================================================== */
+
+    body {
+        overflow-x: hidden;
+    }
 
     .container {
         width: 90%;
+
+        max-width: 100%;
     }
 
     #about,
@@ -742,120 +908,173 @@ nav ul > .fa-times {
     #work,
     #tools,
     #contact {
-        padding: 65px 0;
+        padding: 60px 0;
     }
 
     .sub-titles {
-        font-size: 34px;
+        font-size: 32px;
+
         line-height: 1.2;
+
         margin-bottom: 18px;
     }
 
+    .section-intro {
+        font-size: 14px;
 
-    /* -----------------------------------------
+        line-height: 1.8;
+    }
+
+
+    /* =====================================================
        MOBILE HEADER
-    ----------------------------------------- */
+    ===================================================== */
 
     #header {
         min-height: 100vh;
+
         background-image: url("images/sister.jpg");
+
+        background-size: cover;
+
         background-position: center;
     }
 
     nav {
+        width: 100%;
+
         height: 70px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
         position: relative;
-        z-index: 5000;
+
+        z-index: 10000;
     }
 
     .logo {
         width: 105px;
+
+        height: auto;
     }
 
 
-    /* -----------------------------------------
-       HAMBURGER BUTTON
-    ----------------------------------------- */
+    /* =====================================================
+       HAMBURGER
+    ===================================================== */
 
     nav > i.fa-bars {
         display: flex !important;
 
         align-items: center;
+
         justify-content: center;
 
         width: 45px;
+
         height: 45px;
 
-        color: #fff !important;
         cursor: pointer;
 
-        position: relative;
-        z-index: 6000;
+        color: #fff !important;
 
-        /*
-          Hide Font Awesome's normal character.
-          We create our own visible hamburger below.
-        */
         font-size: 0 !important;
+
+        position: relative;
+
+        z-index: 10001;
     }
 
     nav > i.fa-bars::before {
-        content: "☰" !important;
-        font-family: Arial, Helvetica, sans-serif !important;
-        font-size: 30px !important;
+        content: "\f0c9" !important;
+
+        font-family: "Font Awesome 5 Free" !important;
+
+        font-weight: 900;
+
+        font-size: 28px !important;
+
         color: #fff !important;
-        line-height: 1;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        MOBILE SIDE MENU
-    ----------------------------------------- */
+    ===================================================== */
 
     nav ul#sidemenu {
         position: fixed;
 
         top: 0;
-        right: -250px;
 
-        width: 250px;
+        right: -100%;
+
+        width: 280px;
+
+        max-width: 82vw;
+
         height: 100vh;
 
         display: block;
 
-        padding: 75px 0 30px;
+        padding: 85px 0 30px;
 
-        background: #111522;
+        margin: 0;
+
+        list-style: none;
+
+        background: rgba(13, 16, 28, 0.98);
 
         border-left: 2px solid var(--primary);
 
-        z-index: 5500;
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.55);
+
+        z-index: 10000;
 
         overflow-y: auto;
 
         transition: right 0.35s ease;
-
-        box-shadow: -12px 0 35px rgba(0, 0, 0, 0.45);
     }
+
+    nav ul#sidemenu.open {
+        right: 0;
+    }
+
+
+    /* =====================================================
+       MOBILE MENU ITEMS
+    ===================================================== */
 
     nav ul#sidemenu li {
         display: block;
+
         width: 100%;
+
         margin: 0;
     }
 
     nav ul#sidemenu li a {
-        display: block;
+        display: flex;
+
+        align-items: center;
+
         width: 100%;
 
-        padding: 16px 30px;
+        min-height: 58px;
+
+        padding: 15px 28px;
 
         color: #fff;
 
         font-size: 15px;
-        font-weight: 500;
 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        font-weight: 600;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 
         transition: 0.25s ease;
     }
@@ -864,78 +1083,101 @@ nav ul > .fa-times {
         display: none;
     }
 
-    nav ul#sidemenu li a:hover,
-    nav ul#sidemenu li a:active {
+    nav ul#sidemenu li a:hover {
         background: rgba(255, 0, 79, 0.12);
-        color: #fff;
-        padding-left: 36px;
+
+        color: var(--primary-light);
+
+        padding-left: 35px;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        CLOSE BUTTON
-    ----------------------------------------- */
+    ===================================================== */
 
     nav ul#sidemenu > i.fa-times {
         display: flex !important;
 
         align-items: center;
+
         justify-content: center;
 
         position: absolute;
 
-        top: 17px;
-        left: 20px;
+        top: 18px;
 
-        width: 40px;
-        height: 40px;
+        right: 18px;
+
+        left: auto;
+
+        width: 42px;
+
+        height: 42px;
 
         color: #fff !important;
+
         cursor: pointer;
 
         font-size: 0 !important;
 
-        z-index: 6000;
+        z-index: 10002;
     }
 
     nav ul#sidemenu > i.fa-times::before {
-        content: "×" !important;
-        font-family: Arial, Helvetica, sans-serif !important;
-        font-size: 34px !important;
+        content: "\f00d" !important;
+
+        font-family: "Font Awesome 5 Free" !important;
+
+        font-weight: 900;
+
+        font-size: 27px !important;
+
         color: #fff !important;
-        line-height: 1;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        HERO
-    ----------------------------------------- */
+    ===================================================== */
 
     .header-text {
-        padding-top: 120px;
+        padding-top: 105px;
+
         max-width: 100%;
     }
 
     .header-text > p:first-child {
-        font-size: 13px;
-        line-height: 1.6;
-        margin-bottom: 12px;
+        font-size: 12px;
+
+        line-height: 1.7;
+
+        letter-spacing: 0.7px;
+
+        margin-bottom: 14px;
     }
 
     .header-text h1 {
-        font-size: 38px;
+        font-size: 37px;
+
         line-height: 1.18;
+
         margin-bottom: 20px;
     }
 
     .hero-description {
+        max-width: 100%;
+
         font-size: 14px;
+
         line-height: 1.8;
     }
 
     .hero-buttons {
         display: flex;
+
         flex-wrap: wrap;
+
         gap: 10px;
     }
 
@@ -943,68 +1185,105 @@ nav ul > .fa-times {
         margin-top: 20px;
     }
 
+    .btn {
+        padding: 11px 21px;
 
-    /* -----------------------------------------
-       ABOUT
-    ----------------------------------------- */
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       ABOUT ME
+    ===================================================== */
 
     .row {
-        display: block;
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 35px;
     }
 
     .about-col-1,
     .about-col-2 {
         width: 100%;
+
+        flex-basis: auto;
     }
 
     .about-col-1 {
-        margin-bottom: 35px;
+        margin-bottom: 0;
     }
 
     .about-col-1 img {
         width: 100%;
+
+        max-width: 430px;
+
+        margin: 0 auto;
+
+        border-radius: 14px;
+
+        display: block;
     }
 
     .about-col-2 > p {
         font-size: 14px;
+
         line-height: 1.8;
+
+        margin-bottom: 15px;
     }
 
 
-    /* -----------------------------------------
-       TABS
-    ----------------------------------------- */
+    /* =====================================================
+       ABOUT TABS
+    ===================================================== */
 
     .tab-titles {
         width: 100%;
 
         display: grid;
+
         grid-template-columns: 1fr 1fr;
 
-        margin: 30px 0 25px;
+        margin: 30px 0 22px;
 
         border: 1px solid var(--border);
-        border-radius: 10px;
+
+        border-radius: 12px;
 
         overflow: hidden;
+
+        background: var(--card);
     }
 
     .tab-links {
-        min-height: 54px;
+        min-height: 58px;
 
         display: flex;
+
         align-items: center;
+
         justify-content: center;
 
-        padding: 10px 7px;
+        padding: 10px 8px;
 
         text-align: center;
 
+        color: var(--text-muted);
+
         font-size: 12px;
-        line-height: 1.3;
+
+        line-height: 1.35;
+
+        font-weight: 600;
 
         border-right: 1px solid var(--border);
+
         border-bottom: 1px solid var(--border);
+
+        transition: 0.25s ease;
     }
 
     .tab-links:nth-child(2),
@@ -1018,16 +1297,25 @@ nav ul > .fa-times {
     }
 
     .tab-links.active-link {
-        background: rgba(255, 0, 79, 0.12);
+        color: #fff;
+
+        background: rgba(255, 0, 79, 0.13);
+    }
+
+    .tab-links.active-link::after {
+        height: 3px;
     }
 
 
-    /* -----------------------------------------
-       TAB CONTENT
-    ----------------------------------------- */
+    /* =====================================================
+       ABOUT TAB CONTENT
+       SEPARATE CARD FOR EACH ITEM
+    ===================================================== */
 
     .tab-contents {
         width: 100%;
+
+        display: none;
     }
 
     .tab-contents.active-tab {
@@ -1037,19 +1325,33 @@ nav ul > .fa-times {
     .tab-contents > div {
         width: 100%;
 
-        padding: 15px;
+        padding: 18px;
 
-        margin-bottom: 12px;
+        margin-bottom: 14px;
 
-        background: var(--card);
+        background: linear-gradient(
+            145deg,
+            #121624,
+            #0f1320
+        );
 
-        border: 1px solid var(--border);
-        border-radius: 9px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+
+        border-left: 3px solid var(--primary);
+
+        border-radius: 10px;
+
+        color: var(--text-light);
 
         font-size: 13px;
-        line-height: 1.75;
 
-        overflow-wrap: break-word;
+        line-height: 1.8;
+
+        overflow-wrap: anywhere;
+
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+
+        transition: 0.25s ease;
     }
 
     .tab-contents > div:last-child {
@@ -1057,38 +1359,60 @@ nav ul > .fa-times {
     }
 
     .tab-contents > div span {
-        font-size: 13px;
-        line-height: 1.4;
-        margin-bottom: 6px;
+        display: block;
+
+        color: var(--primary-light);
+
+        font-size: 14px;
+
+        line-height: 1.45;
+
+        font-weight: 700;
+
+        margin-bottom: 7px;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        SERVICES
-    ----------------------------------------- */
+    ===================================================== */
 
     .services-list {
         grid-template-columns: 1fr;
+
         gap: 18px;
+
         margin-top: 30px;
     }
 
     .services-list > div {
-        padding: 23px;
+        padding: 22px;
+
+        border-radius: 11px;
+    }
+
+    .services-list i {
+        font-size: 29px;
+
+        margin-bottom: 14px;
     }
 
     .services-list h2 {
         font-size: 19px;
+
+        line-height: 1.4;
     }
 
     .services-list p {
         font-size: 13px;
+
+        line-height: 1.8;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        EXPERIENCE
-    ----------------------------------------- */
+    ===================================================== */
 
     .experience-list {
         margin-top: 30px;
@@ -1096,132 +1420,178 @@ nav ul > .fa-times {
 
     .experience-item {
         padding: 20px;
+
         margin-bottom: 15px;
+
+        border-radius: 11px;
     }
 
     .job-title {
         font-size: 18px;
+
+        line-height: 1.4;
     }
 
     .company {
         font-size: 15px;
     }
 
+    .experience-item .date {
+        font-size: 12px;
+    }
+
     .experience-item > p:last-child {
         font-size: 13px;
+
+        line-height: 1.8;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        TRAINING
-    ----------------------------------------- */
+    ===================================================== */
 
     .training-list {
         grid-template-columns: 1fr;
+
         gap: 18px;
+
         margin-top: 30px;
     }
 
     .training-item {
         padding: 20px;
+
+        border-radius: 11px;
     }
 
     .training-item h2 {
         font-size: 18px;
+
+        line-height: 1.4;
     }
 
     .training-item p {
         font-size: 13px;
+
+        line-height: 1.8;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        MY WORK
-    ----------------------------------------- */
+    ===================================================== */
 
     .work-list {
         grid-template-columns: 1fr;
+
         gap: 16px;
+
         margin-top: 30px;
     }
 
     .work-item {
         display: flex;
-        gap: 15px;
-        padding: 20px;
+
+        align-items: flex-start;
+
+        gap: 14px;
+
+        padding: 19px;
+
+        border-radius: 11px;
     }
 
     .work-icon {
-        min-width: 45px;
-        width: 45px;
-        height: 45px;
+        min-width: 44px;
+
+        width: 44px;
+
+        height: 44px;
     }
 
     .work-icon i {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .work-content h2 {
         font-size: 17px;
+
+        line-height: 1.4;
     }
 
     .work-content p {
         font-size: 13px;
-        line-height: 1.7;
+
+        line-height: 1.75;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        TOOLS
-    ----------------------------------------- */
+    ===================================================== */
 
     .tools-list {
         grid-template-columns: 1fr 1fr;
+
         gap: 10px;
+
         margin-top: 30px;
     }
 
     .tools-list > div {
-        padding: 16px 8px;
+        padding: 17px 8px;
+
+        border-radius: 9px;
     }
 
     .tools-list > div > i {
         font-size: 24px;
+
         margin-bottom: 8px;
     }
 
     .tools-list > div > p {
         font-size: 12px;
+
+        line-height: 1.5;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        CONTACT
-    ----------------------------------------- */
+    ===================================================== */
 
     .contact-left,
     .contact-right {
         width: 100%;
+
+        flex-basis: auto;
     }
 
     .contact-left {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     .contact-left p {
         font-size: 13px;
+
         word-break: break-word;
+
+        line-height: 1.6;
     }
 
     .contact-right input,
     .contact-right textarea {
         font-size: 14px;
+
+        padding: 14px;
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        FOOTER
-    ----------------------------------------- */
+    ===================================================== */
 
     .copyright {
         padding: 22px 15px;
@@ -1229,5 +1599,66 @@ nav ul > .fa-times {
 
     .copyright p {
         font-size: 12px;
+
+        line-height: 1.6;
     }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES
+========================================================= */
+
+@media only screen and (max-width: 380px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .header-text {
+        padding-top: 90px;
+    }
+
+    .header-text h1 {
+        font-size: 32px;
+    }
+
+    .header-text > p:first-child {
+        font-size: 11px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .sub-titles {
+        font-size: 29px;
+    }
+
+    .tab-links {
+        font-size: 11px;
+
+        padding-left: 5px;
+
+        padding-right: 5px;
+    }
+
+    .tab-contents > div {
+        padding: 16px;
+
+        font-size: 12.5px;
+    }
+
+    .tab-contents > div span {
+        font-size: 13px;
+    }
+
+    .services-list > div,
+    .experience-item,
+    .training-item,
+    .work-item {
+        padding: 17px;
+    }
+
 }
