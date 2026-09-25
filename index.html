@@ -1860,31 +1860,22 @@
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-
     function opentab(tabname, clickedTab) {
 
         for (let tablink of tablinks) {
-
             tablink.classList.remove("active-link");
-
         }
-
 
         for (let tabcontent of tabcontents) {
-
             tabcontent.classList.remove("active-tab");
-
         }
-
 
         clickedTab.classList.add("active-link");
 
         document
             .getElementById(tabname)
             .classList.add("active-tab");
-
     }
-
 
 
     /* =====================================================
@@ -1893,22 +1884,15 @@
 
     var sidemenu = document.getElementById("sidemenu");
 
-
     function openmenu() {
-
-        sidemenu.style.right = "0";
-
+        sidemenu.classList.add("open");
     }
 
-
     function closemenu() {
-
-        sidemenu.style.right = "-250px";
-
+        sidemenu.classList.remove("open");
     }
 
 </script>
-
 
 </body>
 
