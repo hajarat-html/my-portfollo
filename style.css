@@ -105,7 +105,7 @@ nav {
     padding-top: 20px;
 
     position: relative;
-    z-index: 10;
+    z-index: 100;
 }
 
 .logo {
@@ -116,6 +116,9 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
+
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -158,11 +161,13 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-    color: #fff;
+    color: var(--primary-light);
 }
 
 
-/* Hide menu icons on desktop */
+/* =========================================================
+   MOBILE MENU ICONS - HIDDEN ON DESKTOP
+========================================================= */
 
 nav > .fas,
 nav ul > .fas {
@@ -381,7 +386,7 @@ nav ul > .fas {
 }
 
 .tab-links {
-    margin-right: 0;
+    margin: 0;
 
     font-size: 16px;
 
@@ -393,7 +398,7 @@ nav ul > .fas {
 
     color: #8e93a3;
 
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 .tab-links::after {
@@ -422,8 +427,15 @@ nav ul > .fas {
     width: 100%;
 }
 
+
+/* =========================================================
+   TAB CONTENT
+========================================================= */
+
 .tab-contents {
     display: none;
+
+    width: 100%;
 
     animation: fadeIn 0.35s ease;
 }
@@ -431,6 +443,49 @@ nav ul > .fas {
 .tab-contents.active-tab {
     display: block;
 }
+
+
+/*
+   IMPORTANT:
+   Your current index.html uses DIV elements
+   inside the tab contents.
+*/
+
+.tab-contents > div {
+    margin-bottom: 23px;
+
+    color: #b8bcc7;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.tab-contents > div:last-child {
+    margin-bottom: 0;
+}
+
+.tab-contents > div span {
+    display: block;
+
+    color: var(--primary-light);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+
+/* Education text and other tab text */
+
+.tab-contents > div br {
+    line-height: 1.8;
+}
+
+
+/* Animation */
 
 @keyframes fadeIn {
 
@@ -447,54 +502,6 @@ nav ul > .fas {
 }
 
 
-/* Existing list-based content */
-
-.tab-contents ul li {
-    list-style: none;
-
-    margin: 18px 0;
-
-    color: #b8bcc7;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-.tab-contents ul li span {
-    color: var(--primary-light);
-
-    font-size: 15px;
-
-    font-weight: 600;
-}
-
-
-/* Your current HTML also uses DIV blocks */
-
-.tab-contents > div {
-    margin-bottom: 22px;
-
-    color: #b8bcc7;
-
-    font-size: 15px;
-
-    line-height: 1.8;
-}
-
-.tab-contents > div span {
-    display: block;
-
-    color: var(--primary-light);
-
-    font-size: 15px;
-
-    font-weight: 600;
-
-    margin-bottom: 5px;
-}
-
-
 /* =========================================================
    SERVICES
 ========================================================= */
@@ -506,7 +513,7 @@ nav ul > .fas {
 .services-list {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 
     gap: 22px;
 
@@ -693,7 +700,7 @@ nav ul > .fas {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 
     gap: 20px;
 }
@@ -730,6 +737,12 @@ nav ul > .fas {
     font-size: 14px;
 
     line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+.training-item p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -746,7 +759,7 @@ nav ul > .fas {
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 22px;
 }
@@ -800,6 +813,10 @@ nav ul > .fas {
 
     box-shadow:
         0 8px 25px rgba(255, 0, 79, 0.15);
+}
+
+.work-content {
+    min-width: 0;
 }
 
 .work-content h2 {
@@ -860,7 +877,7 @@ nav ul > .fas {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 
     gap: 20px;
 }
@@ -895,16 +912,12 @@ nav ul > .fas {
     margin-bottom: 15px;
 }
 
-.tools-list h3 {
-    font-size: 18px;
-
-    margin-bottom: 8px;
-}
-
 .tools-list p {
-    font-size: 13px;
+    font-size: 15px;
 
     line-height: 1.6;
+
+    color: #fff;
 }
 
 
@@ -1100,15 +1113,15 @@ form .btn2 {
     }
 
     .services-list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .training-list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .tools-list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .work-list {
@@ -1129,7 +1142,9 @@ form .btn2 {
     }
 
 
-    /* ================= HEADER ================= */
+    /* =====================================================
+       HEADER
+    ===================================================== */
 
     #header {
         min-height: 100vh;
@@ -1150,47 +1165,73 @@ form .btn2 {
     }
 
 
-    /* ================= MOBILE NAV ================= */
+    /* =====================================================
+       MOBILE NAVIGATION
+    ===================================================== */
 
     nav {
         width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
     }
 
-    /* Hamburger icon */
 
-    nav > .fas {
+    /*
+       Hamburger icon
+       This matches your current index.html:
+       <i class="fas fa-bars" ...>
+    */
+
+    nav > .fas.fa-bars {
         display: block;
 
         font-size: 25px;
 
-        cursor: pointer;
-
         color: #fff;
 
-        padding: 5px;
+        cursor: pointer;
+
+        padding: 8px;
+
+        z-index: 1001;
+    }
+
+    nav > .fas.fa-bars:hover {
+        color: var(--primary);
     }
 
 
-    /* Side navigation panel */
+    /*
+       Side navigation panel
+       This matches your current:
+       <ul id="sidemenu">
+    */
 
-    nav ul {
-        background: #111522;
+    nav ul#sidemenu {
 
         position: fixed;
 
         top: 0;
 
-        right: -250px;
+        right: -260px;
 
         width: 230px;
 
         height: 100vh;
 
-        padding-top: 70px;
+        background: #111522;
 
         display: block;
 
-        z-index: 100;
+        padding: 70px 0 30px;
+
+        margin: 0;
+
+        z-index: 2000;
 
         border-left: 2px solid var(--primary);
 
@@ -1202,36 +1243,55 @@ form .btn2 {
         overflow-y: auto;
     }
 
-    nav ul li {
+
+    /*
+       Menu links
+    */
+
+    nav ul#sidemenu li {
+
         display: block;
 
         margin: 0;
+
+        padding: 0;
     }
 
-    nav ul li a {
+    nav ul#sidemenu li a {
+
         display: block;
 
-        font-size: 15px;
+        width: 100%;
 
         padding: 15px 30px;
 
         color: #fff;
+
+        font-size: 15px;
+
+        text-decoration: none;
     }
 
-    nav ul li a::after {
+    nav ul#sidemenu li a::after {
         display: none;
     }
 
-    nav ul li a:hover {
+    nav ul#sidemenu li a:hover {
+
         background: rgba(255, 0, 79, 0.08);
 
         color: var(--primary-light);
     }
 
 
-    /* Close icon */
+    /*
+       Close icon
+       This matches your current:
+       <i class="fas fa-times" ...>
+    */
 
-    nav ul > .fas {
+    nav ul#sidemenu > .fas.fa-times {
+
         display: block;
 
         position: absolute;
@@ -1245,22 +1305,28 @@ form .btn2 {
         color: #fff;
 
         cursor: pointer;
+
+        z-index: 2001;
     }
 
-    nav ul > .fas:hover {
+    nav ul#sidemenu > .fas.fa-times:hover {
         color: var(--primary);
     }
 
 
-    /* ================= HERO ================= */
+    /* =====================================================
+       HERO
+    ===================================================== */
 
     .header-text {
+
         margin-top: 80px;
 
         max-width: 100%;
     }
 
     .header-text > p:first-child {
+
         font-size: 12px;
 
         line-height: 1.6;
@@ -1271,6 +1337,7 @@ form .btn2 {
     }
 
     .header-text h1 {
+
         font-size: 35px;
 
         line-height: 1.18;
@@ -1281,6 +1348,7 @@ form .btn2 {
     }
 
     .hero-description {
+
         font-size: 15px;
 
         line-height: 1.7;
@@ -1289,12 +1357,14 @@ form .btn2 {
     }
 
     .hero-buttons {
+
         align-items: flex-start;
 
         flex-direction: column;
     }
 
     .btn {
+
         padding: 11px 24px;
 
         font-size: 13px;
@@ -1303,7 +1373,9 @@ form .btn2 {
     }
 
 
-    /* ================= SECTIONS ================= */
+    /* =====================================================
+       SECTIONS
+    ===================================================== */
 
     #about,
     #services,
@@ -1312,10 +1384,12 @@ form .btn2 {
     #work,
     #tools,
     #contact {
+
         padding: 65px 0;
     }
 
     .sub-titles {
+
         font-size: 35px;
 
         line-height: 1.2;
@@ -1324,26 +1398,32 @@ form .btn2 {
     }
 
     .section-intro {
+
         font-size: 14px;
 
         line-height: 1.7;
     }
 
 
-    /* ================= ABOUT ================= */
+    /* =====================================================
+       ABOUT
+    ===================================================== */
 
     .about-col-1,
     .about-col-2 {
+
         flex-basis: 100%;
     }
 
     .about-col-1 {
+
         margin-bottom: 35px;
 
         text-align: center;
     }
 
     .about-col-1 img {
+
         width: 85%;
 
         margin: auto;
@@ -1352,22 +1432,26 @@ form .btn2 {
     }
 
     .about-col-2 > p {
+
         font-size: 14px;
 
         line-height: 1.8;
     }
 
 
-    /* ================= ABOUT TABS ================= */
+    /* =====================================================
+       ABOUT TABS
+    ===================================================== */
 
     /*
-       Mobile layout:
+       Two-column tab layout:
 
-       Skills              Experience
-       Education           Technical Background
+       Skills          Experience
+       Education       Technical Background
     */
 
     .tab-titles {
+
         display: grid;
 
         grid-template-columns: 1fr 1fr;
@@ -1375,6 +1459,8 @@ form .btn2 {
         width: 100%;
 
         margin: 30px 0 0;
+
+        padding: 0;
 
         gap: 0;
 
@@ -1387,7 +1473,9 @@ form .btn2 {
         background: rgba(255,255,255,0.015);
     }
 
+
     .tab-links {
+
         width: 100%;
 
         margin: 0;
@@ -1407,26 +1495,38 @@ form .btn2 {
         box-sizing: border-box;
     }
 
-    /* Vertical divider */
+
+    /*
+       Vertical divider between columns
+    */
 
     .tab-links:nth-child(odd) {
+
         border-right: 1px solid var(--border);
     }
 
-    /* Remove bottom border from bottom row */
+
+    /*
+       Remove bottom border from second row
+    */
 
     .tab-links:nth-child(3),
     .tab-links:nth-child(4) {
+
         border-bottom: none;
     }
 
+
     .tab-links.active-link {
+
         color: #fff;
 
         background: rgba(255, 0, 79, 0.06);
     }
 
+
     .tab-links.active-link::after {
+
         width: 35px;
 
         left: 50%;
@@ -1435,15 +1535,27 @@ form .btn2 {
     }
 
 
-    /* Tab content appears below the tab box */
+    /*
+       Tab content appears underneath
+    */
 
     .tab-contents {
+
+        display: none;
+
         width: 100%;
 
         margin-top: 25px;
     }
 
+    .tab-contents.active-tab {
+
+        display: block;
+    }
+
+
     .tab-contents > div {
+
         margin-bottom: 22px;
 
         font-size: 13px;
@@ -1454,6 +1566,7 @@ form .btn2 {
     }
 
     .tab-contents > div span {
+
         display: block;
 
         color: var(--primary-light);
@@ -1466,34 +1579,12 @@ form .btn2 {
     }
 
 
-    /* List-based tab content */
-
-    .tab-contents ul {
-        width: 100%;
-    }
-
-    .tab-contents ul li {
-        font-size: 13px;
-
-        line-height: 1.8;
-
-        margin: 20px 0;
-    }
-
-    .tab-contents ul li span {
-        display: block;
-
-        font-size: 14px;
-
-        line-height: 1.5;
-
-        margin-bottom: 6px;
-    }
-
-
-    /* ================= SERVICES ================= */
+    /* =====================================================
+       SERVICES
+    ===================================================== */
 
     .services-list {
+
         grid-template-columns: 1fr;
 
         gap: 18px;
@@ -1502,83 +1593,104 @@ form .btn2 {
     }
 
     .services-list > div {
+
         padding: 28px;
 
         min-height: auto;
     }
 
     .services-list > div i {
+
         font-size: 35px;
     }
 
     .services-list > div h2 {
+
         font-size: 21px;
     }
 
     .services-list > div p {
+
         font-size: 14px;
 
         line-height: 1.8;
     }
 
 
-    /* ================= EXPERIENCE ================= */
+    /* =====================================================
+       EXPERIENCE
+    ===================================================== */
 
     .experience-list {
+
         margin-top: 30px;
     }
 
     .experience-item {
+
         padding: 22px;
 
         margin-bottom: 18px;
     }
 
     .job-title {
+
         font-size: 18px;
     }
 
     .company {
+
         font-size: 15px;
     }
 
     .date {
+
         font-size: 12px;
     }
 
     .experience-item p {
+
         font-size: 14px;
     }
 
 
-    /* ================= TRAINING ================= */
+    /* =====================================================
+       TRAINING
+    ===================================================== */
 
     .training-list {
+
         grid-template-columns: 1fr;
 
         margin-top: 30px;
     }
 
     .training-item {
+
         padding: 24px;
     }
 
 
-    /* ================= WORK ================= */
+    /* =====================================================
+       WORK
+    ===================================================== */
 
     .work-list {
+
         grid-template-columns: 1fr;
 
         margin-top: 30px;
     }
 
     .work-item {
+
         padding: 22px;
 
         gap: 15px;
     }
 
     .work-icon {
+
         min-width: 48px;
 
         height: 48px;
@@ -1587,58 +1699,79 @@ form .btn2 {
     }
 
     .work-content h2 {
+
         font-size: 17px;
     }
 
     .work-content h3 {
+
         font-size: 12px;
     }
 
     .work-content p {
+
         font-size: 13px;
     }
 
 
-    /* ================= TOOLS ================= */
+    /* =====================================================
+       TOOLS
+    ===================================================== */
 
     .tools-list {
+
         grid-template-columns: 1fr;
 
         margin-top: 30px;
     }
 
 
-    /* ================= CONTACT ================= */
+    /* =====================================================
+       CONTACT
+    ===================================================== */
 
     .contact-left,
     .contact-right {
+
         flex-basis: 100%;
     }
 
     .contact-left {
+
         margin-bottom: 45px;
     }
 
     .contact-right {
+
         padding: 22px;
     }
 
     .contact-right h2 {
+
         font-size: 21px;
     }
 
     form input,
     form textarea {
+
         font-size: 14px;
     }
 
 
-    /* ================= COPYRIGHT ================= */
+    /* =====================================================
+       COPYRIGHT
+    ===================================================== */
 
     .copyright {
+
         font-size: 12px;
 
         margin-top: 40px;
+    }
+
+    .copyright p {
+
+        font-size: 12px;
     }
 
 }
